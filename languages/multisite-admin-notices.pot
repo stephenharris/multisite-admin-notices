@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: multisite-admin-notices 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-30 12:46+0100\n"
+"POT-Creation-Date: 2014-05-30 13:10+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,11 +41,11 @@ msgstr ""
 msgid "Publish notice"
 msgstr ""
 
-#: includes/class-multsite-admin-notice-handler.php:110
+#: includes/class-multsite-admin-notice-handler.php:111
 msgid "Dismiss this notice"
 msgstr ""
 
-#: includes/class-multsite-admin-notice-handler.php:111
+#: includes/class-multsite-admin-notice-handler.php:112
 msgid "Dismiss"
 msgstr ""
 
