@@ -97,18 +97,19 @@ class Multsite_Admin_Notice_Handler{
 
 			$class = $notice['type'] == 'error' ? 'error' : 'updated';
 
-			printf("<div class='%s-notice {$class}' id='%s'>%s<p> <a class='%s' href='%s' title='%s'><strong>%s</strong></a></p></div>",
-			esc_attr(self::$prefix),
-			esc_attr(self::$prefix.'-notice-'.$id),
-			$notice['message'],
-			esc_attr(self::$prefix.'-dismiss'),
-			esc_url(add_query_arg(array(
-					'action'=>self::$prefix.'-dismiss-notice',
-					'notice'=>$id,
-					'_wpnonce'=>wp_create_nonce(self::$prefix.'-dismiss-'.$id),
-			))),
-			__('Dismiss this notice','multisite-admin-notices'),
-			__('Dismiss','multisite-admin-notices')
+			printf(
+				"<div class='%s-notice {$class}' id='%s'>%s<p> <a class='%s' href='%s' title='%s'><strong>%s</strong></a></p></div>",
+				esc_attr( self::$prefix ),
+				esc_attr( self::$prefix.'-notice-'.$id ),
+				wpautop( $notice['message'] ),
+				esc_attr( self::$prefix.'-dismiss' ),
+				esc_url( add_query_arg(array(
+					'action' => self::$prefix.'-dismiss-notice',
+					'notice' => $id,
+					'_wpnonce' => wp_create_nonce(self::$prefix.'-dismiss-'.$id),
+				)) ),
+				__( 'Dismiss this notice', 'multisite-admin-notices' ),
+				__( 'Dismiss', 'multisite-admin-notices' )
 			);
 			add_action( 'admin_print_footer_scripts', array( __CLASS__, 'print_footer_scripts' ), 11 );
 		}
