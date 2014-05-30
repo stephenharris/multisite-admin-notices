@@ -163,6 +163,25 @@ class Multsite_Admin_Notice_Handler{
 	 */
 	static function print_footer_scripts() {
 		?>
+		<style>
+		.msan-notices-dismiss:before {
+			background: none;
+			color: #BBB;
+			content: '\f153';
+			font: normal 16px/1 'dashicons';
+			speak: none;
+			height: 20px;
+			margin: 2px 0;
+			text-align: center;
+			width: 20px;
+			-webkit-font-smoothing: antialiased !important;
+			vertical-align: text-bottom;
+			margin-right: 2px;
+		}
+		.msan-notices-dismiss:hover:before {
+			color: #C00;
+		}
+		</style>
 		<script type="text/javascript">
 			jQuery(document).ready(function ($){
 				var dismissClass = '<?php echo esc_js(self::$prefix."-dismiss");?>';
