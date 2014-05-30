@@ -3,4 +3,6 @@ build
 *~
 *.
 !.gitignore
-
+/.project
+/.settings/org.eclipse.php.core.prefs
+/.buildpath
