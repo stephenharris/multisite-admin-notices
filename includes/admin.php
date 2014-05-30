@@ -67,7 +67,7 @@ class MSAN_Admin_Page{
 			<div class="msan-notice-message"> <%- message %></div>
 			<div class="msan-notice-toolbar">
 				<span class="msan-notice-updated"> <%- last_update %> </span>
-				<span class="msan-notice-id"> #<%- id %> </span>
+				<% if( typeof id != 'undefined' ){ %><span class="msan-notice-id"> #<%- id %> </span><% } %>
 				<a href="#" class="msan-delete-notice"><?php esc_html_e( 'Delete', 'multisite-admin-notices' ) ; ?></a>
 				<a href="#" class="msan-edit-notice"><?php esc_html_e( 'Edit', 'multisite-admin-notices' ) ; ?></a>
 			</div>
@@ -79,7 +79,7 @@ class MSAN_Admin_Page{
 			</div>
 			<div class="msan-notice-toolbar">
 				<span class="msan-notice-updated"> <%- last_update %> </span>
-				<span class="msan-notice-id"> #<%- id %> </span>
+				<% if( typeof id != 'undefined' ){ %><span class="msan-notice-id"> #<%- id %> </span><% } %>
 				<a href="#" class="msan-cancel-update"><?php esc_html_e( 'Cancel', 'multisite-admin-notices' ) ; ?></a>
 				<a href="#" class="msan-update-notice"><?php esc_html_e( 'Update', 'multisite-admin-notices' ) ; ?></a>
 			</div>
