@@ -3,7 +3,7 @@
  * Plugin Name: Multisite Admin Notices
  * Plugin URI:  http://stephenharris.info
  * Description: Allows a network adminto create admin notices for blog admins.
- * Version:     0.1.0
+ * Version:     0.1.2
  * Author:      Stephen Harris
  * Author URI:  http://stephenharris.info
  * License:     GPLv2+
@@ -30,21 +30,13 @@
  */
 
 // Useful global constants
-define( 'MSAN_VERSION', '0.1.0' );
+define( 'MSAN_VERSION', '0.1.2' );
 define( 'MSAN_URL', plugin_dir_url( __FILE__ ) );
 define( 'MSAN_DIR', plugin_dir_path( __FILE__ ) );
 
 if ( !defined( 'MSAN_NOTICE_CPT' ) ){
 	define( 'MSAN_NOTICE_CPT', 'msan-admin-notices' );
 }
-
-/****** Install, activation & deactivation******/
-require_once( MSAN_DIR . 'includes/install.php' );
-
-register_activation_hook( __FILE__, 'msan_activate' ); 
-register_deactivation_hook(  __FILE__, 'msan_deactivate' );
-register_uninstall_hook( __FILE__, 'msan_uninstall' );
-
 
 /**
  * Default initialization for the plugin:
