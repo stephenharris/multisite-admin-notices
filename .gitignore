@@ -1,8 +1,10 @@
 node_modules
 build
 *~
-*.
+.*
 !.gitignore
 /.project
 /.settings/org.eclipse.php.core.prefs
 /.buildpath
+*.pot
+*.mo
