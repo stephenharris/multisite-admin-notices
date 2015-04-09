@@ -2,7 +2,7 @@
   "name": "multisite-admin-notices",
   "title": "Multisite Admin Notices",
   "description": "Allows a network adminto create admin notices for blog admins.",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "homepage": "http://stephenharris.info",
   "author": {
     "name": "Stephen Harris",

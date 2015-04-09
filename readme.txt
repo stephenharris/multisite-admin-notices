@@ -4,7 +4,7 @@ Donate link: http://stephenharris.info
 Tags: admin notices, alerts
 Requires at least: 3.9
 Tested up to: 3.9.1
-Stable tag: 0.1.0
+Stable tag: 0.1.2
 License: GPLv2 or later
 
 Allows a network admin to create admin notices for blog admins.
@@ -60,8 +60,17 @@ plug-in is to be very simple to use and minimal.
 
 == Screenshots ==
 
+1. Creating and managing your admin notices
+2. An example of an admin notice
+
 
 == Changelog ==
+
+= 0.1.2 =
+* Removed obselete code
+
+= 0.1.1 =
+* Added screenshots and plug-in banner image
 
 = 0.1.0 =
 * First release
