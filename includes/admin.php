@@ -27,7 +27,7 @@ class MSAN_Admin_Page{
 
 		//Singletons!
 		if ( !is_null( self::$instance ) )
-			trigger_error( "Tried to construct a second instance of class \"$class\"", E_USER_WARNING );
+			trigger_error( "Tried to construct a second instance of class \" " . __CLASS__ . "\"", E_USER_WARNING );
 	
 		$this->hooks();
 	}
@@ -39,8 +39,8 @@ class MSAN_Admin_Page{
 
 	function set_values(){
 
-		$this->title       = "Admin Notices";
-		$this->menu        = "Admin Notices";
+		$this->title       = __("Admin Notices", 'multisite-admin-notices');
+		$this->menu        = __("Admin Notices", 'multisite-admin-notices');
 		$this->permissions = "manage_network";
 		$this->slug        = "msan-admin";
 	}
