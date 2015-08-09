@@ -44,7 +44,7 @@ if ( !defined( 'MSAN_NOTICE_CPT' ) ){
  */
 
 function msan_load_textdomain() {
-    load_plugin_textdomain( 'multisite-admin-notices', false, MSAN_DIR . '/languages/' );
+    load_plugin_textdomain( 'multisite-admin-notices', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 }
 
 add_action('plugins_loaded', 'msan_load_textdomain');
