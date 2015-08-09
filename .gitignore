@@ -7,3 +7,4 @@ build
 /.settings/org.eclipse.php.core.prefs
 /.buildpath
 *.pot
+*.mo
