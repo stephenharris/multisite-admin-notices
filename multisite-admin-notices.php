@@ -42,13 +42,19 @@ if ( !defined( 'MSAN_NOTICE_CPT' ) ){
  * Default initialization for the plugin:
  * - Registers the default textdomain.
  */
+
+function msan_load_textdomain() {
+    load_plugin_textdomain( 'multisite-admin-notices', false, MSAN_DIR . '/languages/' );
+}
+
+add_action('plugins_loaded', 'msan_load_textdomain');
+
 function msan_register_scripts() {
 	
 	$version = defined( 'MSAN_VERSION' ) ? MSAN_VERSION : false;
 	$ext = (defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG) ? '' : '.min';
 
-	load_plugin_textdomain( 'multisite-admin-notices', false, MSAN_DIR . '/languages/' );
-	
+
 	wp_register_script( 'msan-notice-manager', MSAN_URL . "assets/js/msan-notice-manager{$ext}.js", array(
 		'jquery',
 		'backbone',
