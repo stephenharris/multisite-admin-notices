@@ -7,7 +7,7 @@
  * Author:      Stephen Harris
  * Author URI:  http://stephenharris.info
  * License:     GPLv2+
- * Text Domain: msan
+ * Text Domain: multisite-admin-notices
  * Domain Path: /languages
  */
 
