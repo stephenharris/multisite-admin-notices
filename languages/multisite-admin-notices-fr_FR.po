@@ -25,7 +25,7 @@ msgstr ""
 #: ../../plugins/multisite-admin-notices/includes/admin.php:71 ../..
 #: /plugins/multisite-admin-notices/trunk/includes/admin.php:71
 msgid "Delete"
-msgstr "Supprimer\n"
+msgstr "Supprimer"
 
 #: ../../plugins/multisite-admin-notices/includes/admin.php:72 ../..
 #: /plugins/multisite-admin-notices/trunk/includes/admin.php:72
